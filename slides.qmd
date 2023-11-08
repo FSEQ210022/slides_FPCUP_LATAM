@@ -10,7 +10,7 @@ format:
       background-transition: fade
       theme: default
       logo: img/horizontal_SB_color.png
-      footer: "app: [https:/odes-chile.org/app/unidades](https:/odes-chile.org/app/unidades) <br> slides: [https://fseq210022.github.io/slides_latinR2023/](https://fseq210022.github.io/slides_latinR2023/)"
+      footer: "app: [https:/odes-chile.org/app/unidades](https:/odes-chile.org/app/unidades) <br> slides: [https://fseq210022.github.io/slides_FPCUP_LATAM/slides.html](https://fseq210022.github.io/slides_FPCUP_LATAM/slides.html)"
 editor: visual
 engine: knitr
 title-slide-attributes:
