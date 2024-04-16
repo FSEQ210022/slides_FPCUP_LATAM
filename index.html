@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="slides_files/libs/clipboard/clipboard.min.js"></script>
-<script src="slides_files/libs/quarto-html/tabby.min.js"></script>
-<script src="slides_files/libs/quarto-html/popper.min.js"></script>
-<script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.361">
 
   <meta name="author" content="Francisco Zambrano">
   <meta name="author" content="Francisco Meza">
   <meta name="author" content="Nicolas Raab">
   <meta name="author" content="Iongel Duran-Llacer">
-  <meta name="dcterms.date" content="2024-04-18">
-  <title>quarto-input1d62bbd9</title>
+  <title>quarto-input9518c645</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -33,12 +32,32 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="slides_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -340,10 +359,7 @@ Francisco Zambrano <a href="https://orcid.org/0000-0001-6896-8534" class="quarto
 <div class="quarto-title-author-email">
 <a href="mailto:francisco.zambrano@umayor.cl">francisco.zambrano@umayor.cl</a>
 </div>
-        <p class="quarto-title-affiliation">
-            Hemera, UMayor
-          </p>
-    </div>
+</div>
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
 Francisco Meza <a href="https://orcid.org/0000-0002-9853-227X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
@@ -351,10 +367,7 @@ Francisco Meza <a href="https://orcid.org/0000-0002-9853-227X" class="quarto-tit
 <div class="quarto-title-author-email">
 <a href="mailto:fmeza@uc.cl">fmeza@uc.cl</a>
 </div>
-        <p class="quarto-title-affiliation">
-            Agronomía UC.
-          </p>
-    </div>
+</div>
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
 Nicolas Raab <a href="https://orcid.org/0000-0003-0356-4242" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
@@ -373,41 +386,222 @@ Iongel Duran-Llacer <a href="https://orcid.org/0000-0003-3290-4947" class="quart
 </div>
 </div>
 
-  <p class="date">2024-04-18</p>
 </section>
 <section id="context" class="slide level2">
 <h2>Context</h2>
+<ul>
+<li><p><code>Global warming</code> has <code>increased</code> the <code>frequency</code> and <code>intensity</code> of <code>drought</code>, according to the AR6 of the IPCC <span class="citation" data-cites="IPCC2023">(<a href="" role="doc-biblioref" onclick="return false;">Calvin et al. 2023</a>)</span>.</p></li>
+<li><p><span class="citation" data-cites="IPCC2023">Calvin et al. (<a href="" role="doc-biblioref" onclick="return false;">2023</a>)</span> suggests that rising temperatures <code>will increase</code> the extent, frequency, and <code>severity</code> of <code>agricultural</code> and <code>ecological droughts</code>.</p></li>
+<li><p><code>North-central</code> Chile has faced a persistent precipitation deficit <code>since 2010</code>, defined as a <code>megadrought</code> <span class="citation" data-cites="Garreaud2017">(<a href="" role="doc-biblioref" onclick="return false;">Garreaud et al. 2017</a>)</span>.</p></li>
+</ul>
+<p><img data-src="img/global_gis_2022_chart.png" style="width:20.0%" data-fig-align="center" alt="Source: https://earthobservatory.nasa.gov/"> <img data-src="img/fig2_GCH2023_PR_ERA5_surface_temperature_anomaly_annual_2023.png" style="width:15.0%" data-fig-align="center" alt="fsfdsfsdfdsf"> <img data-src="img/era_temp_time_series.png" style="width:20.0%" data-fig-align="center"> <img data-src="img/chile-flag.png" style="width:10.0%"> <img data-src="img/megadrought_chile_guardian.png" style="width:30.0%"></p>
+</section>
+<section id="section" class="slide level2" data-background-image="img/fig_spei24_macrozonas.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="objective" class="slide level2">
+<h2>Objective</h2>
+<p>We aim to assess across continental Chile:</p>
+<ol type="i">
+<li>short- to long-term temporal <code>trends</code> in multi-scalar drought indices of <code>water demand</code>, <code>water supply</code>, and<code>soil moisture</code>; and <code>vegetation productivity</code>;</li>
+<li>the relationship of vegetation productivity with drought indices.</li>
+</ol>
+</section>
+<section id="study-area" class="slide level2 smaller">
+<h2>Study Area</h2>
+<p><strong>Continental Chile</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/map_study_con_landcover.png" style="width:85.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Land cover surface area</strong></p>
+<p><img data-src="img/table_surface_landcover_macrozone.png" style="width:100.0%"></p>
+</div>
+</div>
 </section>
 <section id="methods" class="slide level2">
 <h2>Methods</h2>
+<h3 id="data">Data</h3>
+
+<img data-src="img/table_data_used.png" class="r-stretch"><p><strong>Atmospheric Evaporative Demand (AED) <span class="citation" data-cites="Hargreaves1985">(<a href="" role="doc-biblioref" onclick="return false;">Hargreaves and Samani 1985</a>)</span></strong></p>
+<p><span id="eq-AED"><span class="math display">\[AED = 0.0023\cdot Ra\cdot (T+17.8)\cdot (T_{max}-T_{min})^{0.5} \qquad(1)\]</span></span></p>
 </section>
-<section id="results" class="slide level2">
-<h2>Results</h2>
+<section id="methods-1" class="slide level2 smaller">
+<h2>Methods</h2>
+<p><strong>Drought Indices and vegetation productivity</strong></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li><code>Water Demand:</code> Evaporative Demand Drought Index (EDDI) <span class="citation" data-cites="Hobbins2016 McEvoy2016">(<a href="" role="doc-biblioref" onclick="return false;">Hobbins et al. 2016</a>; <a href="" role="doc-biblioref" onclick="return false;">McEvoy et al. 2016</a>)</span></li>
+<li><code>Water Supply:</code> Standardized Precipitation Index (SPI) <span class="citation" data-cites="McKee1993">(<a href="" role="doc-biblioref" onclick="return false;">Mckee, Doesken, and Kleist 1993</a>)</span></li>
+<li><code>Water Supply - Water Demand:</code> Standardized Precipitation Evapotranspiration Index <span class="citation" data-cites="Vicente-Serrano2010">(<a href="" role="doc-biblioref" onclick="return false;">Vicente-Serrano, Beguería, and López-Moreno 2010</a>)</span></li>
+<li><code>Soil Moisture:</code> Standardized Soil Moisture Index (SSI) <span class="citation" data-cites="Hao2013">(<a href="" role="doc-biblioref" onclick="return false;">Hao and AghaKouchak 2013</a>)</span></li>
+<li><code>Vegetation Productivity:</code> Standardized Anomaly of cumulative NDVI (zcNDVI) <span class="citation" data-cites="Zambrano2018">(<a href="" role="doc-biblioref" onclick="return false;">Zambrano et al. 2018</a>)</span></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/water_balance2.jpeg" style="width:80.0%"></p>
+<figcaption>Water Cycle/Balance Schematic. Source: FISRWG 1998</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="conclusion" class="slide level2">
+<section id="methods-2" class="slide level2 smaller">
+<h2>Methods</h2>
+<p><strong>Drought Indices</strong></p>
+<ul>
+<li><p>Non-parametric method for the calculation of the drought indices <span class="citation" data-cites="Farahmand2015">(<a href="" role="doc-biblioref" onclick="return false;">Farahmand and AghaKouchak 2015</a>)</span></p></li>
+<li><p>Empirical Tukey plotting position <span class="citation" data-cites="Wilks2011">(<a href="" role="doc-biblioref" onclick="return false;">Wilks 2011</a>)</span></p></li>
+</ul>
+<p><span id="eq-probPai"><span class="math display">\[P(A^s_i) = \frac{i-0.33}{n+0.33'} \qquad(2)\]</span></span></p>
+<ul>
+<li>The drought indices <span class="math inline">\(SPI\)</span>, <span class="math inline">\(SPEI\)</span>, <span class="math inline">\(EDDI\)</span>, <span class="math inline">\(SSI\)</span>, and vegetation proxy <span class="math inline">\(zcNDVI\)</span> are obtained following the inverse normal approximation <span class="citation" data-cites="Abramowitz1968">(<a href="" role="doc-biblioref" onclick="return false;">Abramowitz and Stegun 1968</a>)</span>:</li>
+</ul>
+<p><span id="eq-DI"><span class="math display">\[DI(A^s_i) = W - \frac{C_0+C_1\cdot W + c_2 \cdot W^2}{1+d_1\cdot W +d_2\cdot W^2 +d_3\cdot W^3} \qquad(3)\]</span></span></p>
+<ul>
+<li><p><code>SPI, SPEI, EDDI, SSI</code> -&gt; Short- (1 to 6 months) and long-term (12-36 months).</p></li>
+<li><p><code>zcNDVI</code> -&gt; anomaly of cumulative NDVI of 6 months</p></li>
+</ul>
+</section>
+<section id="methods-3" class="slide level2 smaller">
+<h2>Methods</h2>
+<div class="columns">
+<div class="column" style="width:85%;">
+<p><strong>1) Trends analysis</strong></p>
+<ul>
+<li><code>Significance of the trend:</code> Non-parametric test of Mann-Kendall <span class="citation" data-cites="Kendall1975">(<a href="" role="doc-biblioref" onclick="return false;">Kendall 1975</a>)</span>.</li>
+<li><code>Magnitude of the trend:</code> Sen’s slope <span class="citation" data-cites="Sen1968">(<a href="" role="doc-biblioref" onclick="return false;">Sen 1968</a>)</span>.
+<ul>
+<li>Water demand and supply drought indices (SPI, SPEI, EDDI, and SSI) for 1981-2023<br>
+</li>
+<li>Vegetation productivity (zcNDVI) for 2000-2023 over the unchanged land cover 2001-2022.</li>
+</ul></li>
+</ul>
+<p><strong>2) Relationship of zcNDVI with drought indices</strong></p>
+<ul>
+<li>Pixel-to-pixel correlation between the <code>drought</code> indices over time periods of <code>short-</code> (1, 3, 6 mnths) to <code>long-term</code> (12, 24, and 36 mnths) with <code>zcNDVI</code>.</li>
+<li>Resulting in two raster maps:<br>
+
+<ol type="1">
+<li>values of the <code>time scales</code> and drought index that <code>reached</code> the <code>maximum correlation</code>, and<br>
+</li>
+<li>magnitude of the correlation (r) obtained by the drought index at the time scales.</li>
+</ol></li>
+</ul>
+</div><div class="column" style="width:15%;">
+<p><img data-src="img/Rlogo.png" style="width:50.0%"> <img data-src="img/sf-logo.gif" style="width:50.0%"> <img data-src="img/logo-terra.png" style="width:50.0%"> <img data-src="img/hex-tidyverse.png" style="width:50.0%"></p>
+</div>
+</div>
+</section>
+<section>
+<section id="results" class="title-slide slide level1 center" data-background-color="orange">
+<h1>Results</h1>
+
+</section>
+<section id="section-1" class="slide level2" data-background-image="img/trend_raster_SPEI_1981-2023.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-2" class="slide level2" data-background-image="img/trend_raster_EDDI_1981-2023.png" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="trends-of-drought-indices" class="slide level2">
+<h2>Trends of drought indices</h2>
+
+<img data-src="img/trend_macrozone_drought_indices.png" class="r-stretch"></section>
+<section id="vegetation-productivity" class="slide level2" data-background-image="img/temporal_variation_zcNDVI6_macrozonas_con_mapa.png" data-background-size="contain">
+<h2>Vegetation Productivity</h2>
+</section>
+<section id="zcndvi-vs-drought-indices" class="slide level2 smaller">
+<h2>zcNDVI vs drought indices</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Time-scale that reached the maximum r-squared <img data-src="img/mapa_cor_selec_indices_zcNDVI6.png" style="width:85.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>Coefficient of correlation (r) <img data-src="img/mapa_cor_r_indices_zcNDVI6.png" style="width:85.0%"></p>
+</div>
+</div>
+</section>
+<section id="conclusion" class="slide level2 smaller">
 <h2>Conclusion</h2>
+<ul>
+<li><p>We found a <code>significant trend</code> toward <code>decreasing</code> water <code>supply</code> in most of the Chilean territory.</p></li>
+<li><p>The whole country showed an <code>increase</code> in water <code>demand</code> due to increasing temperatures.</p></li>
+<li><p>The magnitude of the <code>trends</code> are <code>stronger</code> for <code>longer time scales</code>.</p></li>
+<li><p>The change in <code>vegetation productivity</code> has been <code>severe</code> in the <code>north-central</code> part of the country.</p></li>
+<li><p>The anomaly in <code>soil moisture</code> over <code>12 months</code> is the main variable explaining the change in vegetation productivity.</p></li>
+<li><p>The variation in AED seems to intensify the drought impact on vegetation productivity.</p></li>
+</ul>
+</section>
+<section id="refs" class="slide level2 scrollable">
+<h2>References</h2>
 
 <img src="img/horizontal_SB_color.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>slides: <a href="https://fseq210022.github.io/EGU2024">https://fseq210022.github.io/EGU2024</a></p>
 </div>
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Abramowitz1968" class="csl-entry" role="listitem">
+Abramowitz, Milton, and Irene A Stegun. 1968. <em>Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables</em>. Vol. 55. US Government printing office.
+</div>
+<div id="ref-IPCC2023" class="csl-entry" role="listitem">
+Calvin, Katherine, Dipak Dasgupta, Gerhard Krinner, Aditi Mukherji, Peter W. Thorne, Christopher Trisos, José Romero, et al. 2023. <span>“<span>IPCC</span>, 2023: <span>Climate</span> <span>Change</span> 2023: <span>Synthesis</span> <span>Report</span>. <span>Contribution</span> of <span>Working</span> <span>Groups</span> <span>I</span>, <span>II</span> and <span>III</span> to the <span>Sixth</span> <span>Assessment</span> <span>Report</span> of the <span>Intergovernmental</span> <span>Panel</span> on <span>Climate</span> <span>Change</span> [<span>Core</span> <span>Writing</span> <span>Team</span>, <span>H</span>. <span>Lee</span> and <span>J</span>. <span>Romero</span> (Eds.)]. <span>IPCC</span>, <span>Geneva</span>, <span>Switzerland</span>.”</span> Intergovernmental Panel on Climate Change (IPCC). <a href="https://www.ipcc.ch/report/ar6/syr/">https://www.ipcc.ch/report/ar6/syr/</a>.
+</div>
+<div id="ref-Farahmand2015" class="csl-entry" role="listitem">
+Farahmand, Alireza, and Amir AghaKouchak. 2015. <span>“A Generalized Framework for Deriving Nonparametric Standardized Drought Indicators.”</span> <em>Advances in Water Resources</em> 76 (February): 140–45. <a href="https://doi.org/10.1016/j.advwatres.2014.11.012">https://doi.org/10.1016/j.advwatres.2014.11.012</a>.
+</div>
+<div id="ref-Garreaud2017" class="csl-entry" role="listitem">
+Garreaud, René, Camila Alvarez-Garreton, Jonathan Barichivich, Juan Pablo Boisier, Duncan Christie, Mauricio Galleguillos, Carlos LeQuesne, James McPhee, and Mauricio Zambrano-Bigiarini. 2017. <span>“The 2010-2015 Mega Drought in <span>Central</span> <span>Chile</span>: <span>Impacts</span> on Regional Hydroclimate and Vegetation.”</span> <em>Hydrology and Earth System Sciences Discussions</em> 2017: 1–37. <a href="https://doi.org/10.5194/hess-2017-191">https://doi.org/10.5194/hess-2017-191</a>.
+</div>
+<div id="ref-Hao2013" class="csl-entry" role="listitem">
+Hao, Zengchao, and Amir AghaKouchak. 2013. <span>“Multivariate <span>Standardized</span> <span>Drought</span> <span>Index</span>: <span>A</span> Parametric Multi-Index Model.”</span> <em>Advances in Water Resources</em> 57 (July): 12–18. <a href="https://doi.org/10.1016/j.advwatres.2013.03.009">https://doi.org/10.1016/j.advwatres.2013.03.009</a>.
+</div>
+<div id="ref-Hargreaves1985" class="csl-entry" role="listitem">
+Hargreaves, George H, and Zohrab A Samani. 1985. <span>“Reference Crop Evapotranspiration from Temperature.”</span> <em>Applied Engineering in Agriculture</em> 1 (2): 96–99.
+</div>
+<div id="ref-Hobbins2016" class="csl-entry" role="listitem">
+Hobbins, Michael T., Andrew Wood, Daniel J. McEvoy, Justin L. Huntington, Charles Morton, Martha Anderson, and Christopher Hain. 2016. <span>“The <span>Evaporative</span> <span>Demand</span> <span>Drought</span> <span>Index</span>. <span>Part</span> <span>I</span>: <span>Linking</span> <span>Drought</span> <span>Evolution</span> to <span>Variations</span> in <span>Evaporative</span> <span>Demand</span>.”</span> <em>Journal of Hydrometeorology</em> 17 (6): 1745–61. <a href="https://doi.org/10.1175/JHM-D-15-0121.1">https://doi.org/10.1175/JHM-D-15-0121.1</a>.
+</div>
+<div id="ref-Kendall1975" class="csl-entry" role="listitem">
+Kendall, Mann. 1975. <em>Rank Correlation Methods (4th Ed</em>. 2d impression). Griffin.
+</div>
+<div id="ref-McEvoy2016" class="csl-entry" role="listitem">
+McEvoy, Daniel J., Justin L. Huntington, Michael T. Hobbins, Andrew Wood, Charles Morton, Martha Anderson, and Christopher Hain. 2016. <span>“The <span>Evaporative</span> <span>Demand</span> <span>Drought</span> <span>Index</span>. <span>Part</span> <span>II</span>: <span>CONUS</span>-<span>Wide</span> <span>Assessment</span> Against <span>Common</span> <span>Drought</span> <span>Indicators</span>.”</span> <em>Journal of Hydrometeorology</em> 17 (6): 1763–79. <a href="https://doi.org/10.1175/JHM-D-15-0122.1">https://doi.org/10.1175/JHM-D-15-0122.1</a>.
+</div>
+<div id="ref-McKee1993" class="csl-entry" role="listitem">
+Mckee, Thomas B, Nolan J Doesken, and John Kleist. 1993. <span>“The Relationship of Drought Frequency and Duration to Time Scales. <span>In</span>: <span>Proceedings</span> of the <span>Ninth</span> <span>Conference</span> on <span>Applied</span> <span>Climatology</span>.”</span> <em>American Metereological Society</em>, no. Boston: 179–84.
+</div>
+<div id="ref-Sen1968" class="csl-entry" role="listitem">
+Sen, Pranab Kumar. 1968. <span>“Estimates of the <span>Regression</span> <span>Coefficient</span> <span>Based</span> on <span>Kendall</span>’s <span>Tau</span>.”</span> <em>Journal of the American Statistical Association</em> 63 (324): 1379–89. <a href="https://doi.org/10.1080/01621459.1968.10480934">https://doi.org/10.1080/01621459.1968.10480934</a>.
+</div>
+<div id="ref-Vicente-Serrano2010" class="csl-entry" role="listitem">
+Vicente-Serrano, Sergio M., Santiago Beguería, and Juan I. López-Moreno. 2010. <span>“A Multiscalar Drought Index Sensitive to Global Warming: <span>The</span> Standardized Precipitation Evapotranspiration Index.”</span> <em>Journal of Climate</em> 23 (7): 1696–1718. <a href="https://doi.org/10.1175/2009JCLI2909.1">https://doi.org/10.1175/2009JCLI2909.1</a>.
+</div>
+<div id="ref-Wilks2011" class="csl-entry" role="listitem">
+Wilks, D. S. 2011. <span>“Empirical Distributions and Exploratory Data Analysis.”</span> Edited by 3rd. <em>Statistical Methods in the Atmospheric Sciences</em> 100.
+</div>
+<div id="ref-Zambrano2018" class="csl-entry" role="listitem">
+Zambrano, Francisco, Anton Vrieling, Andy Nelson, Michele Meroni, and Tsegaye Tadesse. 2018. <span>“Prediction of Drought-Induced Reduction of Agricultural Productivity in <span>Chile</span> from <span>MODIS</span>, Rainfall Estimates, and Climate Oscillation Indices.”</span> <em>Remote Sensing of Environment</em> 219 (December): 15–30. <a href="https://doi.org/10.1016/j.rse.2018.10.006">https://doi.org/10.1016/j.rse.2018.10.006</a>.
+</div>
+</div>
+</section></section>
     </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="slides_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="slides_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="slides_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -568,9 +762,9 @@ Iongel Duran-Llacer <a href="https://orcid.org/0000-0003-3290-4947" class="quart
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1280,
 
-        height: 700,
+        height: 720,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
